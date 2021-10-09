@@ -19,6 +19,6 @@ module.exports = {
   // for GitHub testing
   pathPrefix: '/gatsby-test',
   siteMetadata: {
-    title: `Generative Unfoldings`
+    title: `Artsby`
   }
 }
