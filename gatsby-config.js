@@ -17,8 +17,8 @@ module.exports = {
         }
     ],
   // for GitHub testing
-  pathPrefix: '/gatsby-test',
+  /*  pathPrefix: '/your_github_repo', */
   siteMetadata: {
-    title: `Artsby`
+    title: `Your Title`
   }
 }
