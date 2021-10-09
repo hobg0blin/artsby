@@ -45,7 +45,7 @@ In `static/img`, for the homepage, you can put images of each artwork titled wit
 
 Once everything’s set up, run `setup.sh` - this just copies the index.html files from the works to the src folder, because I haven’t found a less dumb way to get this to work.
 
-Bing bang boom you’ve got an art exhibit! 
+#### Bing bang boom - you’ve got an art exhibit! 
 
 You’ll have to run `gatsby build` once to get everything in the right place, but then you can play around with it -
 
