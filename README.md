@@ -7,7 +7,7 @@ Artsby is a [Gatsby](https://www.gatsbyjs.com/) boilerplate for digital art exhi
 
 Hosting a bunch of different works, with a bunch of different potential dependencies, is a huge hassle. This just takes that out of the equation by keeping them all isolated in their own folders and putting them into iframes, for you or your audience’s viewing pleasure.
 
-This is based on a framework I built for the [generative unfoldings](https://generative-unfoldings.mit.edu/) exhibit at MIT. 
+This is based on a framework I built for the [generative unfoldings](https://generative-unfoldings.mit.edu/) exhibit at MIT. It’s a bit messy and there’s some code in there that’s not being used but may be useful to you (like hiding the header). Anyway, thought I’d put it out there in case it’s useful to someone.
 
 
 ## Setup
