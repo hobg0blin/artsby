@@ -3,22 +3,34 @@
 
 ### [Demo Site](https://brondle.github.io/artsby_demo/). 
 
-Artsby is a [Gatsby](https://www.gatsbyjs.com/) boilerplate for digital art exhibits (it generates static sites, so it’s ideal for static artworks, [p5.js](https://p5js.org/) sketches or anything without a server).
+<img src='static/img/demo_site.png' width='400px'><img src='static/img/work.png' width='400px'><img src='static/img/about.png' width='400px'>
 
-Hosting a bunch of different works, with a bunch of different potential dependencies, is a huge hassle. This just takes that out of the equation by keeping them all isolated in their own folders and putting them into iframes, for you or your audience’s viewing pleasure.
 
-This is based on a framework I built for the [generative unfoldings](https://generative-unfoldings.mit.edu/) exhibit at MIT. It’s a bit messy and there’s some code in there that’s not being used but may be useful to you (like hiding the header). Anyway, thought I’d put it out there in case it’s useful to someone.
+Artsby is a [Gatsby](https://www.gatsbyjs.com/) framework for digital art exhibits (it generates static sites, so it’s ideal for static artworks, [p5.js](https://p5js.org/) sketches or anything without a server).
+
+Hosting a bunch of different digital artworks in a single place, with a coherent aesthetic, is a huge hassle. This takes the hassle out of the equation by keeping them all isolated in their own folders and putting them into iframes for you or your audience’s viewing pleasure, creating a simple digital gallery. Just plug in their work, fill out a couple JSON files, and you’ve got an exhibit, an about page, and you’re ready to go.
+
+You could probably also adapt this for a portfolio or something, I don’t know, I’m not in charge of you.
+
+
+This is based on a framework I built for the [generative unfoldings](https://generative-unfoldings.mit.edu/) exhibit at MIT, so you can also make pretty things like this. 
+
+<img src='static/img/gen_unfo.png' width='600px'>
+
+It’s a bit messy and there’s some code in there that’s not being used but may be useful to you (like hiding the header). At any rate, I thought I’d put it out there in the hopes it’s useful to someone.
+
+This uses the [anti-capitalist software license](https://anticapitalist.software/) so make sure to keep your capitalism out of my software.
 
 
 ## Setup
 
-There’s some basic content in here that you’ll want to remove for your own work: just clear out `src/works` and `static/works`.
+There’s some demo content in here that you’ll want to remove for your own work: just clear out `src/works` and `static/works`.
 
 Clone the repo and run `npm install`.
 
-In `static/works`, put folders containing your digital artworks. As long as there’s an index.html at the root of each folder, it should display when the site builds.
+In `static/works`, put folders containing your digital artworks. **There must be an index.html at the root of each folder**, which will be what displays when the site builds.
 
-In `static/data`, put your exhibit info in `about.json` (it takes HTML), and each artist’s info in `work_info.json`:
+In `static/data`, put your exhibit info in `about.json`, and each artist’s info in `work_info.json`. These can all hold HTML as well as regular strings, so go wild with it. These JSON files auto-populate each page with your exhibit and work details.
 
 #### Sample About
 ```
@@ -46,13 +58,15 @@ In `static/data`, put your exhibit info in `about.json` (it takes HTML), and eac
 
 In `static/img`, for the homepage, you can put images of each artwork titled with the same name as the artwork’s folder in `static/works`, and it’ll auto-populate the homepage with them. You can add your own header image in there, whatever you want.
 
-Once everything’s set up, run `setup.sh` - this just copies the index.html files from the works to the src folder, because I haven’t found a less dumb way to get this to work.
+Once everything’s set up, run `bash setup.sh` - this just copies the index.html files from the works to the src folder, because I haven’t found a less dumb way to get this to work.
 
 #### Bing bang boom - you’ve got an art exhibit! 
 
 You’ll have to run `gatsby build` once to get everything in the right place, but then you can play around with it -
 
 Run `gatsby develop` to get your development site running, and `gatsby build` to create the final version when you’re satisfied. 
+
+You can change the styles to your liking in `src/styles.scss`, and if you’re comfortable with Gatsby/React, this is a pretty minimal build that you can add to.
 
 You might want to set your [site metadata](https://www.gatsbyjs.com/docs/add-page-metadata/) in gatsby-config if you care about things like SEO.
 
