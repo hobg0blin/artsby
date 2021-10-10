@@ -1,9 +1,11 @@
 ![The artsby logo in comic sans](static/img/header.png)
 # Artsby
 
-Artsby is a [Gatsby](https://www.gatsbyjs.com/) boilerplate for digital art exhibits (it generates static sites, so it’s ideal for things like [p5.js](https://p5js.org/) sketches or anything without a server).
+### [Demo Site](https://brondle.github.io/artsby_demo/). 
 
-Hosting a bunch of different works, with a bunch of different potential dependencies, is a huge hassle. This just takes that out of the equation by keeping them all isolated in their own folders and putting them into iframes, for you our your audience’s viewing pleasure.
+Artsby is a [Gatsby](https://www.gatsbyjs.com/) boilerplate for digital art exhibits (it generates static sites, so it’s ideal for static artworks, [p5.js](https://p5js.org/) sketches or anything without a server).
+
+Hosting a bunch of different works, with a bunch of different potential dependencies, is a huge hassle. This just takes that out of the equation by keeping them all isolated in their own folders and putting them into iframes, for you or your audience’s viewing pleasure.
 
 This is based on a framework I built for the [generative unfoldings](https://generative-unfoldings.mit.edu/) exhibit at MIT. 
 
@@ -37,6 +39,7 @@ In `static/data`, put your exhibit info in `about.json` (it takes HTML), and eac
     "artist": "Brent Bailey",
     "bio": "Brent Bailey made this boilerplate."
   }]
+}
 ```
 
 
@@ -49,9 +52,12 @@ Once everything’s set up, run `setup.sh` - this just copies the index.html fil
 
 You’ll have to run `gatsby build` once to get everything in the right place, but then you can play around with it -
 
-Run `gatsby develop` to get your development site running, and `gatsby build` to create the final version when you’re satisfied. You can see the sample site [here](https://brondle.github.io/artsby_demo/). 
-
+Run `gatsby develop` to get your development site running, and `gatsby build` to create the final version when you’re satisfied. 
 
 You might want to set your [site metadata](https://www.gatsbyjs.com/docs/add-page-metadata/) in gatsby-config if you care about things like SEO.
 
 By default, all filepaths just point to root. If you’re deploying to GitHub Pages, you’ll [want to set your path prefix](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/how-gatsby-works-with-github-pages/) in `gatsby-config.js` and make sure you’re prefixing your paths when you build, but if you use FTP or something simple you should be fine!
+
+## Known Bugs
+
+If you’re working with p5 and relying on windowWidth, the fullscreen button won’t automatically change your sketch width - you’ll have to reset your sketch when the windowWidth changes.
