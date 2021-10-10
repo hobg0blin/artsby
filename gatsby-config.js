@@ -19,6 +19,6 @@ module.exports = {
   // for GitHub testing
   /*  pathPrefix: '/your_github_repo', */
   siteMetadata: {
-    title: `Your Title`
+    /*  title: `Your Title` */
   }
 }
