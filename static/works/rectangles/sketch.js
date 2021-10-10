@@ -16,3 +16,9 @@ function draw() {
   }
 
 }
+
+function windowResized() {
+  setTimeout(() => {
+    window.location.reload()
+  }, 1000)
+}

@@ -88,3 +88,10 @@ function drawWords(x, y) {
   text(filteredCorpus.slice(wordBegin, wordEnd).join(' ').trim(), x, y);
 
 }
+
+
+function windowResized() {
+  setTimeout(() => {
+    window.location.reload()
+  }, 1000)
+}

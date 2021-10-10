@@ -60,4 +60,4 @@ By default, all filepaths just point to root. If you’re deploying to GitHub Pa
 
 ## Known Bugs
 
-If you’re working with p5 and relying on windowWidth, the fullscreen button won’t automatically change your sketch width - you’ll have to reset your sketch when the windowWidth changes.
+If you’re working with p5 and relying on windowWidth, the fullscreen button won’t automatically change your sketch width - you’ll have to use a windowResized() function like the starter code.
