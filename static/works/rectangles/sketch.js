@@ -1,6 +1,7 @@
 let my_colors = ['red', 'green', ' blue', 'yellow']
 function setup() {
   createCanvas(windowWidth, windowHeight)
+  frameRate(10)
 }
 
 function draw() {

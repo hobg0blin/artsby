@@ -8,7 +8,7 @@
 
 Artsby is a [Gatsby](https://www.gatsbyjs.com/) framework for digital art exhibits (it generates static sites, so it’s ideal for static artworks, [p5.js](https://p5js.org/) sketches or anything without a server).
 
-Hosting a bunch of different digital artworks in a single place, with a coherent aesthetic, is a huge hassle. This takes the hassle out of the equation by keeping them all isolated in their own folders and putting them into iframes for you or your audience’s viewing pleasure, creating a simple digital gallery. Just plug in their work, fill out a couple JSON files, and you’ve got an exhibit, an about page, and you’re ready to go.
+Hosting a bunch of different digital artworks in a single place, with a coherent aesthetic, is a huge hassle. This takes the hassle out of the equation by keeping them all isolated in their own folders and putting them into the noble and oft-maligned iframe for you or your audience’s viewing pleasure, creating a simple digital gallery. Just plug in their work, fill out a couple JSON files, and you’ve got an exhibit, an about page, and you’re ready to go.
 
 You could probably also adapt this for a portfolio or something, I don’t know, I’m not in charge of you.
 
@@ -64,7 +64,7 @@ Once everything’s set up, run `bash setup.sh` - this just copies the index.htm
 
 You’ll have to run `gatsby build` once to get everything in the right place, but then you can play around with it -
 
-Run `gatsby develop` to get your development site running, and `gatsby build` to create the final version when you’re satisfied. 
+Run `gatsby develop` to get your development site running on `localhost:8000`, and `gatsby build` to create the final version when you’re satisfied - you can test the built version on `localhost:9000` by running `gatsby serve`. 
 
 You can change the styles to your liking in `src/styles.scss`, and if you’re comfortable with Gatsby/React, this is a pretty minimal build that you can add to.
 
