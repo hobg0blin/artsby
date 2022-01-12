@@ -19,8 +19,6 @@ This is based on a framework I built for the [generative unfoldings](https://gen
 
 It’s a bit messy and there’s some code in there that’s not being used but may be useful to you (like hiding the header). At any rate, I thought I’d put it out there in the hopes it’s useful to someone.
 
-This uses the [anti-capitalist software license](https://anticapitalist.software/) so make sure to keep your capitalism out of my software.
-
 
 ## Setup
 
